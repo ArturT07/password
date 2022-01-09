@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Пароль</title>
+        <script>
+            function checkPassword() {
+                var password = document.getElementById("passwordBox");
+                var passwordText = password.value;
+                if(passwordText=="Ernest300"){
+                    return true;
+                }
+                alert("Доступ заборонено ! Неправильний пароль !");
+                return false;
+            }
+        </script>
+        <style>
+            body {
+                background-color: lightblue;
+                padding: 1px;
+                text-align: center;
+                margin-top: 13%;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="font-size: 30pt;">ВИЯВЛЕННЯ ЧЕРНЕЧОГО ДІАМАНТА</p>
+        <div style="font-size: 25pt;">
+        <p>Для входу на сайт введи, будь ласка, пароль</p>
+        <p>Пароль:<input id="passwordBox" type="password"></p>
+        <a href="E:\IT\CS50\Кодування\Місія 1\Виявлення чернечого діаманта.html" onclick="return checkPassword();">Клацни тут, щоб надіслати пароль і потрапити на сайт</a>
+    </body>
+</html>
